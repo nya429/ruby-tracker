@@ -3,6 +3,12 @@ ruby '2.4.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.8'
+# plataform outsource
+gem 'devise'
+gem 'devise-bootstrap-views'
+# if rails 5 also need jqeury
+# gem 'jquery-rails'
+gem 'twitter-bootstrap-rails'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -34,7 +40,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
-  
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 end
