@@ -9,6 +9,8 @@ gem 'devise-bootstrap-views'
 # if rails 5 also need jqeury
 # gem 'jquery-rails'
 gem 'twitter-bootstrap-rails'
+gem 'stock_quote'
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
