@@ -1,4 +1,6 @@
 class Stock < ActiveRecord::Base
+  has_many :user_stocks
+  has_many :users, through: :user_stocks
  #class level method self.  no need to instance
   def self.new_from_lookup(ticker_symbol)
     begin
