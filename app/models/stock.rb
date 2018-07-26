@@ -2,6 +2,11 @@ class Stock < ActiveRecord::Base
   has_many :user_stocks
   has_many :users, through: :user_stocks
  #class level method self.  no need to instance
+  def self.find_by_ticker(ticker_symbol)
+      # in Stock model, no need to Stock.where, instead directly where
+    where(ticker: ticker_symbol).first
+  end
+
   def self.new_from_lookup(ticker_symbol)
     begin
       looked_up_stock = StockQuote::Stock.quote(ticker_symbol)
