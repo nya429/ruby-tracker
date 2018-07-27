@@ -10,6 +10,7 @@ class User < ActiveRecord::Base
   def stock_already_added?(ticker_symbol)
     stock = Stock.find_by_ticker(ticker_symbol)
     return false unless stock
+    # has_many Association Reference, auto gained 17 method
     user_stocks.where(stock_id: stock.id).exists?
   end
 
@@ -19,5 +20,10 @@ class User < ActiveRecord::Base
 
   def can_add_stock?(ticker_symbol)
     under_stock_limit? && !stock_already_added?(ticker_symbol)
+  end
+
+  def full_name
+    return "#{first_name} #{last_name}".strip if (first_name || last_name)
+    "Anonymous"
   end
 end

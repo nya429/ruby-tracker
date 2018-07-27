@@ -22,3 +22,24 @@
  .no-padding {
    padding: 0;
  }
+
+ .left-padding {
+   padding-left: 15px;
+ }
+
+ .logout {
+   padding-left: 0;
+ }
+
+ .user-name {
+   padding-top: 15px;
+ }
+
+ .log-out a {
+   color: #fff !important;
+    margin: 5% 0;
+ }
+
+ .log-out a:hover {
+   background-color: #c9302c !important;
+ }

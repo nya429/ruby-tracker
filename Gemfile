@@ -10,7 +10,8 @@ gem 'devise-bootstrap-views'
 # gem 'jquery-rails'
 gem 'twitter-bootstrap-rails'
 gem 'stock_quote'
-
+#try to fix js hard refresh issue
+gem 'jquery-turbolinks'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
